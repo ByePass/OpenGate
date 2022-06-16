@@ -1,129 +1,9 @@
-$background: #2c303a;
-
-body {
-  font-family: 'Montserrat', sans-serif;
-  background: $background;
-}
-
-.container {
-  margin: 100px auto;
-  width: 500px;
-  text-align: center;
-}
-
-.progress {
-  padding: 6px;
-  background: rgba(0, 0, 0, 0.25);
-  border-radius: 6px;
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 25, 255, 0.08);
-}
-
-.progress-bar {	
-  height: 10px;
-	background-color: #ee303c;  
-  border-radius: 9px; 
-  transition: 0.9s linear;  
-  transition-property: width, background-color;    
-}
-
-.progress-striped .progress-bar { 	
-  background-color: #FCBC51; 
-  width: 100%; 
-  background-image: linear-gradient(
-        45deg, rgb(252,163,17) 25%, 
-        transparent 25%, transparent 50%, 
-        rgb(252,163,17) 50%, rgb(252,163,17) 75%,
-        transparent 75%, transparent); 
-  animation: progressAnimationStrike 6s;
-}
-
-@keyframes progressAnimationStrike {
-     from { width: 0 }
-     to   { width: 100% }
-}
- 
-.progress2 {
-  padding: 6px;
-  border-radius: 30px;
-  background: rgba(0, 0, 0, 0.25);  
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
-}
-
-.progress-bar2 {
-  height: 18px;
-  border-radius: 30px;
-  background-image: 
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
-  transition: 0.4s linear;  
-  transition-property: width, background-color;    
-}
-
-.progress-moved .progress-bar2 {
-  width: 85%; 
-  background-color: #EF476F;  
-  animation: progressAnimation 6s;
-}
-
-@keyframes progressAnimation {
-  0%   { width: 5%; background-color: #F9BCCA;}
-  100% { width: 85%; background-color: #EF476F; }
-}
-
-$green: #4cd964;
-$turquoise: #5ac8fa;
-$blue: #007aff;
-$light-blue: #7DC8E8;
-$purple: #5856d6;
-$red: #ff2d55;
-
-.progress-bar3 {
-  height: 18px;
-  border-radius: 4px;
-  background-image: 
-     linear-gradient(to right, 
-       $green, $turquoise, $blue, 
-       $light-blue, $purple, $red);
-  transition: 0.4s linear;  
-  transition-property: width, background-color;    
-}
-
-.progress-infinite .progress-bar3 { 	 
-  width: 100%; 
-  background-image: 
-    linear-gradient(to right, $green, $turquoise, $blue, $light-blue, $purple, $red);
-  animation: colorAnimation 1s infinite;
-}
-
-@keyframes colorAnimation {
-  0% { 
-    background-image: 
-    linear-gradient(to right, $green, $turquoise, $blue, $light-blue, $purple, $red);
-  }
-  20% { 
-    background-image: 
-    linear-gradient(to right, $turquoise, $blue, $light-blue, $purple, $red, $green);
-  }
-  40% { 
-    background-image: 
-    linear-gradient(to right, $blue, $light-blue, $purple, $red, $green, $turquoise);
-  }
-  60% { 
-    background-image: 
-    linear-gradient(to right, $light-blue, $purple, $red, $green, $turquoise, $blue);
-  }
-  100% { 
-    background-image: 
-    linear-gradient(to right, $purple, $red, $green, $turquoise, $blue, $light-blue);
-  }
-}
-
 <html>
-	
 <center>
-         <h1 style="color:black">OpenGate v1.0.3</h1> 
+         <h1 style="color:black">OpenGate v1.1.0</h1> 
 	<p style="color:white"> Developed by Matty (github.com/byronbytes) </p>
 	<p style="color:white"> Future Plans: Add the ability to change website title and incongnito things. Also make everything work.</p> 
-	<p style="color:white"> Everything here is experimental and things may break. Have patience!</p> 
+	<p style="color:white"> Everything here is experimental and things may break or not work. Have patience!</p> 
 	 <body style="background-color:grey;">
 		 
 		 <a href='javascript:spoof()'>
@@ -133,35 +13,14 @@ $red: #ff2d55;
 		<h2>Test Alternate Spoofer</h2></a>
 
 <title>OpenGate</title>
-	
-	<div class="container">    
-  <div class="progress progress-striped">
-    <div class="progress-bar">
-    </div>                       
-  </div> 
-</div>
-
-<div class="container">    
-  <div class="progress2 progress-moved">
-    <div class="progress-bar2" >
-    </div>                       
-  </div> 
-</div>
-
-<div class="container">    
-  <div class="progress progress-infinite">
-    <div class="progress-bar3" >
-    </div>                       
-  </div> 
-</div>
 
 	<script> function spoof() {
 			a = window.open('%20%20%20%20%20%20%20%20%20%20%20% 20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20% 20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20% 20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20% 20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20% 20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20% 20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20% 20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20% 20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20% 20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20% 20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20% 20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20% 20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20% 20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20% 20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20% 20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20% 20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20% 20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20% 20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20% 20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20% 20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20% 20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20% 20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20');
 			a.document.write('<body style="background-color:grey;">'); 
-			a.document.write('<h1 style="color:black">OpenGate PR0XY<\h1>'); 
+			a.document.write('<p> </p>');
+			a.document.write('<h1 style="color:black">OpenGate P0RTAL<\h1>'); 
 			a.document.write('<h3 style="color:white">[WIP] Use the search bar below:<\h3>'); 
 			a.document.write('<title> OpenGate </title>'); 
-			a.document.write('<iframe src="https://google.com"></iframe>');
 			a.document.write('<center>');
 			a.document.write('<h1 style="color:red"> You are now anonymized. </h1>');
 			a.document.write('<h3> You are now unable to be seen by potential teachers who are spying, have fun.');
@@ -170,7 +29,7 @@ $red: #ff2d55;
 	</script> 
 	
 	<script> function TestProxySpoof() {
-			alert('Test script ran.');
+			alert('This script doesnt work Will be improved soon.');
 			a = window.open('%20%20%20%20%20%20%20%20%20%20%20% 20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20% 20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20% 20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20% 20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20% 20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20% 20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20% 20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20% 20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20% 20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20% 20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20% 20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20% 20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20% 20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20% 20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20% 20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20% 20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20% 20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20% 20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20% 20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20% 20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20% 20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20% 20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20 http://google.com');
 			a.stop(); } 
 	</script> 
